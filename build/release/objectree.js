@@ -1,11 +1,11 @@
 ;(function() {
     'use strict';
 
-    var ObjTree = function(object) {
+    var ObjecTree = function(object) {
         // short hand initialization
-        if(!(this instanceof ObjTree)) {
+        if(!(this instanceof ObjecTree)) {
             // return new instance
-            return new ObjTree(object);
+            return new ObjecTree(object);
         }
 
         // if object is not set
@@ -20,7 +20,7 @@
 
         // set object
         o.object = object;
-    }, o = ObjTree.prototype;
+    }, o = ObjecTree.prototype;
 
     // Default object
     o.object = {};
@@ -187,13 +187,13 @@
 
     // register AMD module
     if(typeof define === 'function' && define.amd) {
-        define('ObjTree', [], function() {
-            return ObjTree;
+        define('ObjecTree', [], function() {
+            return ObjecTree;
         })
     }
 
     // expose this object globally
-    if(typeof window.ObjTree === 'undefined') {
-        window.ObjTree = ObjTree; 
+    if(typeof window.ObjecTree === 'undefined') {
+        window.ObjecTree = ObjecTree; 
     }
 })();

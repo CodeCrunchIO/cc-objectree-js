@@ -4,7 +4,7 @@ var rename  = require('gulp-rename');
 var concat  = require('gulp-concat');
 
 // default src path
-var JS_SRC_PATH     = 'src/objtree.js';
+var JS_SRC_PATH     = 'src/objectree.js';
 // default release path
 var RELEASE_PATH    = 'build/release';
 
@@ -16,12 +16,12 @@ gulp.task('build', function() {
     // read original src
     fs.createReadStream(JS_SRC_PATH)
     // pipe then write original src
-    .pipe(fs.createWriteStream(RELEASE_PATH + '/objtree.js'));
+    .pipe(fs.createWriteStream(RELEASE_PATH + '/objectree.js'));
 
     // set the src
     return gulp.src(JS_SRC_PATH)
     // set the build name
-    .pipe(concat('objtree.js'))
+    .pipe(concat('objectree.js'))
     // uglify!
     .pipe(uglify({ mangle : true }))
     // rename
