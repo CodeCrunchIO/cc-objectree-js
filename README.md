@@ -41,6 +41,27 @@ var user = structure.get('query.bool.term.user');
 var structure = structure.get();
 ```
 
+***OUTPUT***
+```js
+{
+    "query" : {
+        "bool" : {
+            "term" : {
+                "user" : "Charles"
+            }
+        }
+    },
+    "filter" : [
+        {
+            "user" : "charles"
+        },
+        {
+            "user" : "richard"
+        }
+    ]
+}
+```
+
 <a name="license"></a>
 ## License
 MIT
