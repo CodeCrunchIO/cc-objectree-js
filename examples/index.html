@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Tree</title>
+
+    <script type="text/javascript" src="../src/objtree.js"></script>
+    <script type="text/javascript">
+        var object = ObjTree({});
+
+        var query = object
+        .set('query.bool.term.user', 'Charles')
+        .set('sort.field.[user.name]', 'desc')
+        .set('filter.user', 'Charles');
+
+        query.add('x', 1, 'y');
+
+        console.log(query.get('x.y'));
+        console.log(query.get());
+        console.log(query.get('query.bool.term.user'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
