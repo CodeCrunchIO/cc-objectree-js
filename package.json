@@ -1,8 +1,8 @@
 {
-  "name": "cc-objtree",
+  "name": "objtree",
   "version": "1.0.0",
   "description": "Create a nested object easily using object path key format",
-  "main": "build/release/objpath.js",
+  "main": "build/release/objtree.js",
   "directories": {
     "example": "examples"
   },
