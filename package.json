@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodeCrunchIO/cc-objpath.git"
+    "url": "git+https://github.com/CodeCrunchIO/objpath.git"
   },
   "keywords": [
     "object",
@@ -21,9 +21,9 @@
   "author": "Charles Zamora",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CodeCrunchIO/cc-objpath/issues"
+    "url": "https://github.com/CodeCrunchIO/objpath/issues"
   },
-  "homepage": "https://github.com/CodeCrunchIO/cc-objpath#readme",
+  "homepage": "https://github.com/CodeCrunchIO/objpath#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
